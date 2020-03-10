@@ -11,6 +11,13 @@
   font-weight: normal;
   font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Lato Light';
+    src: url('assets/Lato-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 html {
   font-size: 10px;
 }
@@ -250,7 +257,7 @@ grid-template-areas: ".services_part1 .services_part2 .services_part3 <br>"
 }
 
 .services_text {
-
+  overflow: hidden;
   margin-top: 1px;
   position: relative;
   justify-self: end;
@@ -373,7 +380,10 @@ grid-template-areas: ".services_part1 .services_part2 .services_part3 <br>"
 }
 
 .name {
-overflow: visible;
+
+overflow: hidden;
+margin-inline-start: 0px;
+margin-inline-end: 20px;
 padding-top: 15px;
 font-size: 1.8rem;
 line-height: 18px;
